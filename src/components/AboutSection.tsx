@@ -3,7 +3,7 @@ import ContactButton from './ContactButton';
 import AnimatedText from './AnimatedText';
 
 const ABOUT_TEXT =
-  'I am a B.Tech student at G. Narayanamma Institute of Technology and Sciences (CGPA 9.01) with strong interest in building impactful products using full-stack development and AI. I enjoy creating scalable systems, from autonomous AI research workflows to mental-health and safety-focused applications, with emphasis on usability, performance, and reliability.';
+  'I am a B.Tech student from G. Narayanamma Institute of Technology and Sciences (CGPA 9.01) with strong interest in building impactful products using full-stack development and AI. I enjoy creating scalable systems, from autonomous AI research workflows to mental-health and safety-focused applications, with emphasis on usability, performance, and reliability.';
 
 const SKILL_GROUPS = [
   {
