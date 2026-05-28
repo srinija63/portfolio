@@ -111,9 +111,9 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-black/10" />
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/70" />
 
-      {/* Hero cutout — right side (lifted slightly; Magnet keeps cursor follow) */}
+      {/* Hero cutout — right side; Magnet keeps cursor follow */}
       <div
-        className="pointer-events-none absolute inset-y-0 right-0 z-[5] hidden md:flex w-[min(48vw,640px)] items-end justify-end pe-4 pb-14 md:pb-20 lg:pb-24 lg:pe-10"
+        className="pointer-events-none absolute inset-y-0 right-0 z-[5] hidden md:flex w-[min(48vw,640px)] items-end justify-end pe-4 pb-4 md:pb-6 lg:pb-8 lg:pe-10"
         aria-hidden
       >
         <Magnet
