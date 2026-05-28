@@ -1,0 +1,60 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#070A14"/>
+      <stop offset="1" stop-color="#0B1020"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(800 380) rotate(90) scale(560 720)">
+      <stop stop-color="#6EA8FE" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#6EA8FE" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="0" y="0" width="1600" height="1000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <ellipse cx="800" cy="380" rx="720" ry="560" fill="url(#glow)"/>
+
+  <text x="220" y="170" fill="#E5EEFC" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="56" font-weight="900">
+    Tool graph - Dynamic routing
+  </text>
+  <text x="220" y="220" fill="#9FB0D0" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="24" font-weight="500">
+    Web search -> summarize -> compare -> sources (JSON repair on failure)
+  </text>
+
+  <g filter="url(#shadow)">
+    <!-- nodes -->
+    <rect x="240" y="320" width="320" height="110" rx="22" fill="rgb(14,22,46)" fill-opacity="0.88" stroke="rgb(148,163,184)" stroke-opacity="0.18" stroke-width="2"/>
+    <rect x="640" y="300" width="320" height="110" rx="22" fill="rgb(14,22,46)" fill-opacity="0.88" stroke="rgb(148,163,184)" stroke-opacity="0.18" stroke-width="2"/>
+    <rect x="1040" y="320" width="320" height="110" rx="22" fill="rgb(14,22,46)" fill-opacity="0.88" stroke="rgb(148,163,184)" stroke-opacity="0.18" stroke-width="2"/>
+    <rect x="640" y="520" width="320" height="110" rx="22" fill="rgb(14,22,46)" fill-opacity="0.88" stroke="rgb(148,163,184)" stroke-opacity="0.18" stroke-width="2"/>
+
+    <text x="270" y="370" fill="#E5EEFC" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="20" font-weight="800">Web Search</text>
+    <text x="270" y="402" fill="#9FB0D0" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="16" font-weight="600">DuckDuckGo</text>
+
+    <text x="670" y="350" fill="#E5EEFC" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="20" font-weight="800">Summarizer</text>
+    <text x="670" y="382" fill="#9FB0D0" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="16" font-weight="600">LLM summary</text>
+
+    <text x="1070" y="370" fill="#E5EEFC" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="20" font-weight="800">Comparator</text>
+    <text x="1070" y="402" fill="#9FB0D0" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="16" font-weight="600">Trade-offs</text>
+
+    <text x="670" y="570" fill="#E5EEFC" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="20" font-weight="800">JSON Repair</text>
+    <text x="670" y="602" fill="#9FB0D0" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="16" font-weight="600">Schema enforcement</text>
+
+    <!-- connectors -->
+    <path d="M560 375H640" stroke="rgb(110,168,254)" stroke-opacity="0.75" stroke-width="4" stroke-linecap="round"/>
+    <path d="M960 355H1040" stroke="rgb(110,168,254)" stroke-opacity="0.75" stroke-width="4" stroke-linecap="round"/>
+    <path d="M800 410V520" stroke="rgb(108,92,231)" stroke-opacity="0.70" stroke-width="4" stroke-linecap="round"/>
+    <path d="M800 630V760" stroke="rgb(148,163,184)" stroke-opacity="0.35" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 10"/>
+
+    <!-- output -->
+    <rect x="400" y="760" width="800" height="170" rx="26" fill="rgb(7,14,32)" fill-opacity="0.75" stroke="rgb(148,163,184)" stroke-opacity="0.14" stroke-width="2"/>
+    <text x="430" y="810" fill="#E5EEFC" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="20" font-weight="900">
+      Output
+    </text>
+    <text x="430" y="850" fill="#9FB0D0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="16" font-weight="600">
+      { "summary": "...", "comparison": "...", "sources": ["https://..."] }
+    </text>
+  </g>
+</svg>

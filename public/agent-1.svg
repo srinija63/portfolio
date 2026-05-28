@@ -1,0 +1,76 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#070A14" />
+      <stop offset="1" stop-color="#0B1020" />
+    </linearGradient>
+    <radialGradient id="glow1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(340 260) rotate(30) scale(520 420)">
+      <stop stop-color="#6EA8FE" stop-opacity="0.25" />
+      <stop offset="1" stop-color="#6EA8FE" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1280 220) rotate(-15) scale(520 420)">
+      <stop stop-color="#6C5CE7" stop-opacity="0.22" />
+      <stop offset="1" stop-color="#6C5CE7" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="panel" x1="280" y1="280" x2="1320" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E162E" stop-opacity="0.92" />
+      <stop offset="1" stop-color="#0B1226" stop-opacity="0.92" />
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1600" height="1000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)" />
+  <ellipse cx="340" cy="260" rx="520" ry="420" fill="url(#glow1)" />
+  <ellipse cx="1280" cy="220" rx="520" ry="420" fill="url(#glow2)" />
+
+  <text x="220" y="180" fill="#E5EEFC" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="64" font-weight="800">
+    Multi-Tool AI Research Agent
+  </text>
+  <text x="220" y="235" fill="#9FB0D0" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="26" font-weight="500">
+    LangChain + FastAPI - Structured answers (summary, comparison, sources)
+  </text>
+
+  <g filter="url(#shadow)">
+    <rect x="200" y="280" width="1200" height="560" rx="28" fill="url(#panel)" stroke="rgb(148,163,184)" stroke-opacity="0.18" stroke-width="2" />
+
+    <rect x="250" y="330" width="360" height="44" rx="22" fill="rgb(110,168,254)" fill-opacity="0.14" stroke="rgb(110,168,254)" stroke-opacity="0.24" />
+    <text x="270" y="360" fill="#C6DBFF" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="16" font-weight="700" letter-spacing="2">
+      RESEARCH - TOOL SELECTION
+    </text>
+
+    <rect x="250" y="410" width="1100" height="190" rx="18" fill="rgb(4,11,26)" fill-opacity="0.75" stroke="rgb(148,163,184)" stroke-opacity="0.20" stroke-width="2" />
+    <text x="280" y="465" fill="#9FB0D0" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="20" font-weight="500">
+      Example: Compare LangChain and LlamaIndex for RAG applications...
+    </text>
+
+    <rect x="250" y="630" width="190" height="54" rx="14" fill="rgb(79,142,247)" fill-opacity="0.95" />
+    <text x="292" y="665" fill="#FFFFFF" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="18" font-weight="700">
+      Run Research
+    </text>
+
+    <rect x="460" y="630" width="120" height="54" rx="14" fill="rgb(148,163,184)" fill-opacity="0.14" stroke="rgb(148,163,184)" stroke-opacity="0.22" />
+    <text x="497" y="665" fill="#E5EEFC" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="18" font-weight="700">
+      Clear
+    </text>
+
+    <rect x="250" y="720" width="350" height="95" rx="18" fill="rgb(7,14,32)" fill-opacity="0.72" stroke="rgb(148,163,184)" stroke-opacity="0.14" stroke-width="2" />
+    <rect x="625" y="720" width="350" height="95" rx="18" fill="rgb(7,14,32)" fill-opacity="0.72" stroke="rgb(148,163,184)" stroke-opacity="0.14" stroke-width="2" />
+    <rect x="1000" y="720" width="350" height="95" rx="18" fill="rgb(7,14,32)" fill-opacity="0.72" stroke="rgb(148,163,184)" stroke-opacity="0.14" stroke-width="2" />
+
+    <text x="275" y="760" fill="#E5EEFC" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="18" font-weight="800">Summary</text>
+    <text x="650" y="760" fill="#E5EEFC" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="18" font-weight="800">Comparison</text>
+    <text x="1025" y="760" fill="#E5EEFC" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="18" font-weight="800">Sources</text>
+
+    <text x="275" y="795" fill="#9FB0D0" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="14" font-weight="600">
+      Structured JSON response
+    </text>
+    <text x="650" y="795" fill="#9FB0D0" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="14" font-weight="600">
+      Trade-offs + recommendations
+    </text>
+    <text x="1025" y="795" fill="#9FB0D0" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="14" font-weight="600">
+      Linked citations
+    </text>
+  </g>
+</svg>

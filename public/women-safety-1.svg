@@ -1,0 +1,57 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C0C0C"/>
+      <stop offset="1" stop-color="#0A0A10"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1220 280) rotate(10) scale(700 520)">
+      <stop stop-color="#F43F5E" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#F43F5E" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="0" y="0" width="1600" height="1000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <ellipse cx="1220" cy="280" rx="700" ry="520" fill="url(#glow)"/>
+
+  <text x="220" y="170" fill="#D7E2EA" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="58" font-weight="900">
+    Women Security Alert System
+  </text>
+  <text x="220" y="220" fill="#D7E2EA" fill-opacity="0.65" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="24" font-weight="600">
+    Shake-to-alert " Siren " Live location share
+  </text>
+
+  <g filter="url(#shadow)">
+    <!-- phone -->
+    <rect x="980" y="240" width="380" height="700" rx="58" fill="rgb(20,20,24)" fill-opacity="0.95" stroke="rgb(215,226,234)" stroke-opacity="0.12" stroke-width="2"/>
+    <rect x="1008" y="294" width="324" height="592" rx="40" fill="rgb(12,12,12)" fill-opacity="0.86" stroke="rgb(215,226,234)" stroke-opacity="0.10" stroke-width="2"/>
+    <circle cx="1170" cy="270" r="7" fill="rgb(215,226,234)" fill-opacity="0.30"/>
+
+    <text x="1060" y="360" fill="#D7E2EA" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="18" font-weight="800">
+      Emergency
+    </text>
+    <text x="1060" y="388" fill="#D7E2EA" fill-opacity="0.65" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="12" font-weight="700">
+      One tap to send alert
+    </text>
+
+    <!-- SOS button -->
+    <circle cx="1170" cy="540" r="110" fill="rgb(244,63,94)" fill-opacity="0.18"/>
+    <circle cx="1170" cy="540" r="88" fill="rgb(244,63,94)" fill-opacity="0.92"/>
+    <text x="1122" y="555" fill="#FFFFFF" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="40" font-weight="900">
+      SOS
+    </text>
+
+    <!-- hint cards -->
+    <rect x="1060" y="690" width="220" height="44" rx="16" fill="rgb(215,226,234)" fill-opacity="0.06" stroke="rgb(215,226,234)" stroke-opacity="0.10"/>
+    <text x="1082" y="718" fill="#D7E2EA" fill-opacity="0.75" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="12" font-weight="700">
+      Siren: ON
+    </text>
+    <rect x="1060" y="748" width="220" height="44" rx="16" fill="rgb(215,226,234)" fill-opacity="0.06" stroke="rgb(215,226,234)" stroke-opacity="0.10"/>
+    <text x="1082" y="776" fill="#D7E2EA" fill-opacity="0.75" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto" font-size="12" font-weight="700">
+      Location: SHARED
+    </text>
+  </g>
+</svg>
+
