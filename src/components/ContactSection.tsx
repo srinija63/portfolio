@@ -1,5 +1,6 @@
 import { Mail, MessageCircle, Linkedin, Github, ArrowUpRight } from 'lucide-react';
 import FadeIn from './FadeIn';
+import { EMAIL, EMAIL_LINK } from '../config/contact';
 
 interface ContactMethod {
   icon: typeof Mail;
@@ -12,8 +13,8 @@ const CONTACT_METHODS: ContactMethod[] = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'saradasrinija@gmail.com',
-    href: 'mailto:saradasrinija@gmail.com',
+    value: EMAIL,
+    href: EMAIL_LINK,
   },
   {
     icon: MessageCircle,

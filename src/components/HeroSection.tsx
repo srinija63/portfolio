@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import FadeIn from './FadeIn';
 import Magnet from './Magnet';
+import { EMAIL_LINK } from '../config/contact';
 
 const NAV_LINKS = [
   { label: 'About', href: '#about' },
@@ -119,7 +120,7 @@ const HeroSection = () => {
         <Magnet
           padding={140}
           strength={2.5}
-          className="pointer-events-auto flex h-[min(88vh,880px)] w-full items-end justify-end"
+          className="pointer-events-auto flex h-[min(88vh,880px)] w-auto max-w-full items-end justify-end"
         >
           <FadeIn delay={0.65} y={48} duration={1}>
             <img
@@ -139,8 +140,8 @@ const HeroSection = () => {
       {/* Content layer */}
       <div className="relative z-10 flex h-full flex-col">
         {/* Top bar */}
-        <FadeIn delay={0} y={-20} className="relative">
-          <div className="flex items-center justify-between px-6 md:px-10 pt-6 md:pt-8">
+        <FadeIn delay={0} y={-20} className="relative z-20">
+          <div className="relative z-20 flex items-center justify-between px-6 md:px-10 pt-6 md:pt-8">
             <ul className="flex items-center gap-5 sm:gap-8 md:gap-12">
               {NAV_LINKS.map((link) => (
                 <li key={link.label}>
